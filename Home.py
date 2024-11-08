@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")
 col1,col2 = st.columns(2)
 
 with col1:
-    st.image("images/photo.png")
+    st.image("images/image.png")
 
 with col2:
     st.title("Deepak Pawal")
@@ -23,7 +23,10 @@ with col2:
 content2="""
 Below are some of the apps I have created. Feel free to contact me!
 """
-st.write(content2)
+col5,empty_coll,col6 = st.columns([0.75,2,0.25])
+
+with empty_coll:
+    st.subheader(content2)
 
 col3,empty_col,col4 = st.columns([1.5,0.5,1.5])
 
